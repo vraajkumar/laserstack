@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
-import { Menu, X, Code2 } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import './Navbar.css';
 
@@ -38,12 +38,7 @@ const Navbar: React.FC = () => {
                     duration={500}
                     className="logo"
                 >
-                    <div className="logo-icon">
-                        <Code2 size={24} />
-                    </div>
-                    <span className="logo-text">
-                        Laser Stack
-                    </span>
+                    <img src="/logo.png" alt="Laser Stack" className="logo-img" />
                 </Link>
 
                 {/* Desktop Menu */}
