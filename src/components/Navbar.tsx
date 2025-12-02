@@ -38,7 +38,8 @@ const Navbar: React.FC = () => {
                     duration={500}
                     className="logo"
                 >
-                    <img src="/logo.png" alt="Laser Stack" className="logo-img" />
+                    <img src="/logo-transparent.png" alt="Laser Stack" className="logo-img" />
+                    <span className="logo-text">Laser Stack</span>
                 </Link>
 
                 {/* Desktop Menu */}
