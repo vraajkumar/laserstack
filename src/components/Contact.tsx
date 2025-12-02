@@ -1,13 +1,13 @@
 import React, { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, MapPin, Phone, Send, Loader2 } from 'lucide-react';
+import { Mail, Send, Loader2 } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 import './Contact.css';
 
 const Contact: React.FC = () => {
     const formRef = useRef<HTMLFormElement>(null);
     const [isSubmitting, setIsSubmitting] = useState(false);
-    const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+    const [, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
     const [formData, setFormData] = useState({
         name: '',
@@ -154,4 +154,3 @@ const Contact: React.FC = () => {
 };
 
 export default Contact;
-

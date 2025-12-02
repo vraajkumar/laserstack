@@ -29,13 +29,11 @@
 .hero-content {
     text-align: left;
     /* Left aligned for a more corporate/editorial feel */
-    max-width: 1200px;
     width: 100%;
     z-index: 10;
-    padding: 0 2rem;
     display: grid;
     grid-template-columns: 1.5fr 1fr;
-    gap: 4rem;
+    gap: 6rem;
     align-items: center;
 }
 
